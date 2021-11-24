@@ -1,0 +1,42 @@
+{% extends 'store/seller_main.html' %}
+{% load static %}
+{% block content %}
+
+
+<section class="contact" id="contact">
+
+    <form action="">
+
+        <h1 class="headingo"> Find out the most suitable crop to grow in your farm </h1>
+        <hr>
+
+        <div class="inputBox1">
+            <input type="number" placeholder="Nitrogen">
+        </div>
+
+        <div class="inputBox1">
+            <input type="number" placeholder="Phosphorous">
+        </div>
+
+        <div class="inputBox1">
+            <input type="number" placeholder="Pottasium">
+        </div>
+
+        <div class="inputBox1">
+            <input type="number" placeholder="Ph level">
+        </div>
+
+        <div class="inputBox1">
+            <input type="number" placeholder="Rainfall (in mm)">
+        </div>
+
+        <input type="submit" value="Predict" class="btn">
+
+    </form>
+
+</section>
+
+
+
+
+{% endblock content %}
