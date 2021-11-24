@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrot</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="C:\Users\pcs\Desktop\Hanoch\grocery website\css\style.css">
+    <style>
+        .ima {
+        height: 450px;
+        width: 500px;
+        float: left;
+        }
+
+        .dis {
+        padding-top: 15px;
+        padding-left: 550px;
+        text-align: left;
+        font-size: 3rem;
+        }
+
+        .skars{
+        font-size: 2rem;
+        color: gold;
+        }
+        .price{
+        font-size: 2rem;
+        color:#333;
+        padding:.5rem 0;
+        }
+
+        .price span{
+        font-size: 1.5rem;
+        color:#999;
+        text-decoration: line-through;
+        }
+
+        .quantity{
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        padding-top: 1rem;
+        padding-bottom: .5rem;
+        }
+
+        .quantity span{
+        padding: 0.7rem;
+        font-size: 2rem;
+        }
+
+        .quantity input{
+        border:.1rem solid rgba(0,0,0,.3);
+        font-size: 1.7rem;
+        font-weight: bolder;
+        color:var(--black);
+        padding:.5rem;
+        background:rgba(0,0,0,.05);
+        }
+        .okay{
+            padding-left: 10%;
+        }
+        .about{
+            font-size: 1.5rem;
+        }
+
+        @media(max-width:600px){
+            .okay{
+                padding-left: 0%;
+            }
+            .ima{
+                height: 300px;
+                width: 350px;
+                float: none;
+                align-content: center;
+            }
+            .dis {
+            padding-top: 15px;
+            padding-left: 0px;
+            text-align: center;
+            font-size: 3rem;
+            }
+            .quantity{
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        @media(max-width: 945px){
+            .okay{
+                padding-left: 10%;
+            }
+            .ima{
+                float: left;
+                align-content: center;
+            }
+            .dis {
+            padding-top: 15px;
+            padding-left: 0px;
+            text-align: left;
+            font-size: 3rem;
+            }
+            .quantity{
+                align-items: left;
+                justify-content: left;
+            }
+        }
+    </style>
+</head>
+<body>
+  
+  <header>
+
+    <div class="header-1">
+
+        <a href="#" class="logo"><i class="fas fa-shopping-basket"></i>agventure</a>
+
+        <form action="" class="search-box-container">
+            <input type="search" id="search-box" placeholder="Search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+    </div>
+
+    <div class="header-2">
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#category">category</a>
+            <a href="#product">product</a>
+            <a href="#deal">deal</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+        <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-sign-in-alt"></a>
+        </div>
+
+    </div>
+
+</header>
+
+<section class="okay">
+    <div class="image">
+      <img src="C:\Users\pcs\Desktop\Hanoch\grocery website\images\vegetables\carrot.png" class="ima">
+      <div class="dis">
+        <h3 class="diso">
+          Fresh produced <span style="color: #27ae60;">carrots</span>
+        </h3>
+        <p style="font-size: 2rem;">Brand: Farmer's Fresh</p>
+        <div class="skars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+          </div><br>
+          <div class="price" style="font-size: 2rem;"> Price: ₹75/kg <span>  ₹100/kg </span></div>
+          <div class="quantity">
+              <span style="font-size: 2rem;">Quantity : </span>
+              <input type="number" onchange="setTwoNumberDecimal" min="0.25" max="50" step="0.25" value="0.25">
+              <span style="font-size: 2rem;"> /kg </span>
+          </div>
+          <div>
+          <a href="#" class="btn">add to cart</a>
+          <a href="#" class="btn">add to favourite</a>
+          </div>
+          <p name="stock" style="color: #27ae60;"><br>In stock</p>
+          <p style="font-size: 1.5rem; ">Cultivated by the farmers of Telangana</p>
+          <br><ul class="about"><b>About this item:</b>
+              <li>carrots contain great amount of antioxidants that promote good health</li>
+              <li>They have high amounts of nutrients and minerals that are necessary to maintain a healthy body</li>
+              <li>These carrots are soft and spongy when raw</li>
+          </ul>
+        </div>
+    </div>
+  </section>
+
+  <section class="banner-container" id="category">
+
+    <div class="banner">
+        <img src="C:\Users\pcs\Desktop\Hanoch\grocery website\images\banner-1.jpg" alt="">
+        <div class="content">
+            <h3>vegetables</h3>
+            <p>upto 25% off</p>
+            <a href="C:/Users/pcs/Desktop/Hanoch/grocery%20website/vegetables.html" target="_blank" class="btn">check out</a>
+        </div>
+    </div>
+
+    <div class="banner">
+        <img src="C:\Users\pcs\Desktop\Hanoch\grocery website\images\banner-2.jpg" alt="">
+        <div class="content">
+            <h3>fruits</h3>
+            <p>upto 30% off</p>
+            <a href="C:/Users/pcs/Desktop/Hanoch/grocery%20website/fruits.html" target="_blank" class="btn">check out</a>
+        </div>
+    </div>
+
+</section>
+
+<!-- product section ends -->
+
+<!-- deal section starts  -->
+
+<section class="deal" id="deal">
+
+    <div class="content">
+
+        <h3 class="title">deal of the day</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam possimus voluptates commodi laudantium! Doloribus sint voluptatibus quaerat sequi suscipit nulla?</p>
+
+        <div class="count-down">
+            <div class="box">
+                <h3 id="day">00</h3>
+                <span>day</span>
+            </div>
+            <div class="box">
+                <h3 id="hour">00</h3>
+                <span>hour</span>
+            </div>
+            <div class="box">
+                <h3 id="minute">00</h3>
+                <span>minute</span>
+            </div>
+            <div class="box">
+                <h3 id="second">00</h3>
+                <span>second</span>
+            </div>
+        </div>
+
+        <a href="#" class="btn">check the deal</a>
+
+    </div>
+
+</section>
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> <span>contact</span> us </h1>
+
+    <form action="">
+
+        <div class="inputBox">
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+        </div>
+
+        <div class="inputBox">
+            <input type="number" placeholder="Number">
+            <input type="text" placeholder="Subject">
+        </div>
+
+        <textarea placeholder="Message" name="" id="" cols="30" rows="10"></textarea>
+
+        <input type="submit" value="send message" class="btn">
+
+    </form>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- newsletter section starts  -->
+
+<section class="newsletter">
+
+    <h3>subscribe us for latest updates</h3>
+
+    <form action="">
+        <input class="box" type="email" placeholder="Enter your email">
+        <input type="submit" value="subscribe" class="btn">
+    </form>
+
+</section>
+
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <a href="#" class="logo"><i class="fas fa-shopping-basket"></i>agventure</a>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam culpa sit enim nesciunt rerum laborum illum quam error ut alias!</p>
+            <div class="share">
+                <a href="https://www.facebook.com/CBIThyderabad" class="btn fab fa-facebook-f" style="border-radius: 25%;"></a>
+                <a href="https://twitter.com/CBIThyd" class="btn fab fa-twitter" style="border-radius: 25%;"></a>
+                <a href="http://www.instagram.com/cbithyderabad" class="btn fab fa-instagram" style="border-radius: 25%;"></a>
+                <a href="https://www.linkedin.com/company/cbit-technologies/" class="btn fab fa-linkedin" style="border-radius: 25%;"></a>
+            </div>
+        </div>
+        
+        <div class="box">
+            <h3>our helping hands</h3>
+            <div class="links">
+                <a href="https://www.cbit.ac.in/">CBIT</a>
+                <a href="https://ts.meeseva.telangana.gov.in/meeseva/home.htm">Mee Seva</a>
+                <a href="https://en.wikipedia.org/wiki/Agriculture_in_India">Farmers</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <div class="links">
+                <a href="#home">home</a>
+                <a href="#category">category</a>
+                <a href="#product">product</a>
+                <a href="#deal">deal</a>
+                <a href="#contact">contact</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>follow us on</h3>
+            <div class="links">
+                <a href="https://www.facebook.com/CBIThyderabad">facebook</a>
+                <a href="https://twitter.com/CBIThyd">twitter</a>
+                <a href="http://www.instagram.com/cbithyderabad">instagram</a>
+                <a href="https://www.linkedin.com/company/cbit-technologies/">linked-in</a>
+            </div>
+        </div>
+
+    </div>
+
+    <h1 class="credit"> created by <span> Hanoch and Pramod </span> | all rights reserved! </h1>
+
+</section>
+
+
+<script src="C:\Users\pcs\Desktop\Hanoch\grocery website\js\script.js"></script>
+    
+</body>
+</html>
